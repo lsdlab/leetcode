@@ -7,7 +7,7 @@ class Solution(object):
         """
         if len(nums1) > len(nums2):
             return self.intersect(nums2, nums1)
-  
+
         lookup = collections.defaultdict(int)
         for i in nums1:
             lookup[i] += 1
@@ -19,4 +19,3 @@ class Solution(object):
                 lookup[i] -= 1
 
         return res
-        

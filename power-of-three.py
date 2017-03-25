@@ -9,4 +9,3 @@ class Solution(object):
         if n == 0 or n % 3 > 0:
             return False
         return self.isPowerOfThree(n / 3)
-

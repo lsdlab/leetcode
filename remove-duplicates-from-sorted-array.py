@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: int
         """
         n = len(nums)
-        if n==0 or n==1:
+        if n == 0 or n == 1:
             return n
         j = 0
         for i in range(1, n):
@@ -13,4 +13,3 @@ class Solution(object):
                 nums[j + 1] = nums[i]
                 j += 1
         return j + 1
-

@@ -15,12 +15,12 @@ class Solution(object):
         MinInt = -(1 << 31)
         if str[0] == '+':
             i += 1
-        elif str[0] == '-' :
+        elif str[0] == '-':
             i += 1
             sign = -1
 
-        for i in range(i, length) :
-            if str[i] < '0' or str[i] > '9' :
+        for i in range(i, length):
+            if str[i] < '0' or str[i] > '9':
                 break
             result = result * 10 + int(str[i])
             if result > MaxInt:
